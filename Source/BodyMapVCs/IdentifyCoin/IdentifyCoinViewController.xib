@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IdentifyCoinViewController" customModule="MoleMapper" customModuleProvider="target">
+            <connections>
+                <outlet property="helpButton" destination="N90-mM-qiV" id="osq-zx-lID"/>
+                <outlet property="imageView" destination="112-gm-UTW" id="zSJ-Ex-ZxW"/>
+                <outlet property="scrollView" destination="Niy-Bk-nyp" id="a57-gb-XYE"/>
+                <outlet property="view" destination="iN0-l3-epB" id="a4t-KO-5UD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Niy-Bk-nyp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="112-gm-UTW">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="112-gm-UTW" firstAttribute="leading" secondItem="Niy-Bk-nyp" secondAttribute="leading" id="7BF-zW-ZgI"/>
+                        <constraint firstAttribute="bottom" secondItem="112-gm-UTW" secondAttribute="bottom" id="NWq-vH-ljP"/>
+                        <constraint firstAttribute="trailing" secondItem="112-gm-UTW" secondAttribute="trailing" id="bLW-9V-92R"/>
+                        <constraint firstItem="112-gm-UTW" firstAttribute="top" secondItem="Niy-Bk-nyp" secondAttribute="top" id="grW-Uc-NZB"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="P8h-XX-oZW"/>
+                    </connections>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N90-mM-qiV">
+                    <rect key="frame" x="171.5" y="50" width="32" height="30"/>
+                    <state key="normal" title="Help"/>
+                    <connections>
+                        <action selector="invokeHelp:" destination="-1" eventType="touchUpInside" id="bpg-E2-eJa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="N90-mM-qiV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="91O-OV-k3q"/>
+                <constraint firstItem="112-gm-UTW" firstAttribute="height" secondItem="Niy-Bk-nyp" secondAttribute="height" id="9sL-pJ-frA"/>
+                <constraint firstItem="Niy-Bk-nyp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Fo7-Ld-xQ0"/>
+                <constraint firstItem="112-gm-UTW" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Hba-Ko-3Ci"/>
+                <constraint firstItem="Niy-Bk-nyp" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bSn-O9-VFy"/>
+                <constraint firstItem="N90-mM-qiV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cJO-J7-TJ7"/>
+                <constraint firstItem="Niy-Bk-nyp" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="lCS-6h-I74"/>
+                <constraint firstItem="Niy-Bk-nyp" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="ldf-Ee-emI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="128.5"/>
+        </view>
+    </objects>
+</document>

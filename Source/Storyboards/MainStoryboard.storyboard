@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="mA8-ov-38R">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="Ysu-mJ-Gho">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBar" id="mA8-ov-38R" customClass="MainTabBarController" customModule="MoleMapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="UWt-kg-faV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xHd-Z4-SRb" kind="relationship" relationship="viewControllers" id="1RW-kR-IBc"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="74j-rx-cdj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3846.4000000000001" y="-316.64167916041981"/>
+        </scene>
+        <!--bodyMapBase-->
+        <scene sceneID="Zk3-lz-U9R">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="bodyMapBase" storyboardName="MoleMap" referencedIdentifier="bodyMapBase" id="xHd-Z4-SRb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Eq1-zY-2v4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rcB-jO-Pzq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3234" y="-318"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" name="mmBlue"/>
+</document>

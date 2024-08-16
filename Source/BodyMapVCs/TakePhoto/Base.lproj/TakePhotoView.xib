@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TakePhotoViewController" customModule="MoleMapper" customModuleProvider="target">
+            <connections>
+                <outlet property="helpButton" destination="6kZ-qT-C5L" id="z6U-cZ-VCT"/>
+                <outlet property="takePhotoView" destination="qak-Xp-kVe" id="dC3-sq-SWS"/>
+                <outlet property="view" destination="iN0-l3-epB" id="wTy-vm-Ro9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmr-yw-NQu">
+                    <rect key="frame" x="0.0" y="734" width="375" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="W3W-ob-dxb"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem title="Cancel" id="c3V-P9-Kb7">
+                            <connections>
+                                <action selector="onBack" destination="-1" id="5Py-bP-tPa"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="CKF-9r-IVw"/>
+                        <barButtonItem title="Rotate" image="flipCamera" id="jMy-db-aP9">
+                            <connections>
+                                <action selector="changeCamera" destination="-1" id="pXH-VH-ha8"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </toolbar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qak-Xp-kVe" customClass="TakePhotoView" customModule="MoleMapper" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="375" height="690"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="PAR-tI-4Ch" appends="YES" id="W9d-Ai-JcK"/>
+                    </connections>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kZ-qT-C5L">
+                    <rect key="frame" x="171.66666666666666" y="74" width="32" height="30"/>
+                    <state key="normal" title="Help"/>
+                    <connections>
+                        <action selector="invokeHelp:" destination="-1" eventType="touchUpInside" id="keI-DA-orA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rmr-yw-NQu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="45L-wg-bNl"/>
+                <constraint firstItem="qak-Xp-kVe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="F2G-YV-kvW"/>
+                <constraint firstItem="qak-Xp-kVe" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="HK0-qb-q1x"/>
+                <constraint firstItem="6kZ-qT-C5L" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="J9J-LL-HwW"/>
+                <constraint firstItem="6kZ-qT-C5L" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="Om6-qN-dsb"/>
+                <constraint firstItem="qak-Xp-kVe" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Qce-F0-EXl"/>
+                <constraint firstItem="rmr-yw-NQu" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="b18-ki-75J"/>
+                <constraint firstItem="rmr-yw-NQu" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="qur-11-eYt"/>
+                <constraint firstItem="rmr-yw-NQu" firstAttribute="top" secondItem="qak-Xp-kVe" secondAttribute="bottom" id="tX9-1N-QNp"/>
+                <constraint firstItem="rmr-yw-NQu" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="v38-EL-eLY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+        <tapGestureRecognizer id="PAR-tI-4Ch">
+            <connections>
+                <action selector="focusAndExposeTap" destination="-1" id="SdP-Gi-zZl"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="flipCamera" width="20" height="20"/>
+    </resources>
+</document>

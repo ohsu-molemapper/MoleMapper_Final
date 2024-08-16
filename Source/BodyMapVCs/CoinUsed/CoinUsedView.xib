@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoinUsedViewController" customModule="MoleMapper" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonCoinNotUsed" destination="Bqf-f6-F9X" id="SMm-Ek-w6h"/>
+                <outlet property="buttonCoinUsed" destination="mrF-VK-1kV" id="ekW-w4-ZNl"/>
+                <outlet property="buttonTryAgain" destination="chO-sk-1lm" id="K7J-GA-v5K"/>
+                <outlet property="view" destination="iN0-l3-epB" id="thd-Ta-cuy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you include an (optional) coin in your photo?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGZ-5Q-XP3">
+                    <rect key="frame" x="40" y="102" width="295" height="208"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="208" id="RSO-of-Dlq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bqf-f6-F9X" customClass="RoundedButtonView" customModule="MoleMapper" customModuleProvider="target">
+                    <rect key="frame" x="28" y="593" width="130" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="38m-3X-oRg"/>
+                        <constraint firstAttribute="width" constant="130" id="sTk-yR-01x"/>
+                    </constraints>
+                    <state key="normal" title="No">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrF-VK-1kV" customClass="RoundedButtonView" customModule="MoleMapper" customModuleProvider="target">
+                    <rect key="frame" x="217" y="593" width="130" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Kuw-rd-oEO"/>
+                        <constraint firstAttribute="width" constant="130" id="bIX-2w-T6M"/>
+                    </constraints>
+                    <state key="normal" title="Yes">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chO-sk-1lm" userLabel="Button Try Again" customClass="RoundedButtonView" customModule="MoleMapper" customModuleProvider="target">
+                    <rect key="frame" x="28" y="485" width="319" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="1VV-Ex-2C6"/>
+                    </constraints>
+                    <state key="normal" title="I meant to!\n (let me try again)--"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mrF-VK-1kV" secondAttribute="trailing" constant="28" id="8mT-uf-7Wf"/>
+                <constraint firstItem="Bqf-f6-F9X" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="28" id="9M8-ba-gvT"/>
+                <constraint firstItem="mrF-VK-1kV" firstAttribute="trailing" secondItem="chO-sk-1lm" secondAttribute="trailing" id="FDr-hG-hpF"/>
+                <constraint firstItem="Bqf-f6-F9X" firstAttribute="top" secondItem="chO-sk-1lm" secondAttribute="bottom" constant="44" id="QzQ-1p-1PA"/>
+                <constraint firstItem="SGZ-5Q-XP3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="Wkx-o6-Ked"/>
+                <constraint firstItem="SGZ-5Q-XP3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="82" id="oqi-PH-m9b"/>
+                <constraint firstItem="chO-sk-1lm" firstAttribute="leading" secondItem="Bqf-f6-F9X" secondAttribute="leading" id="tg8-cg-pXg"/>
+                <constraint firstAttribute="trailing" secondItem="SGZ-5Q-XP3" secondAttribute="trailing" constant="40" id="v1l-VW-YA2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mrF-VK-1kV" secondAttribute="bottom" constant="30" id="vCs-1J-y7w"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Bqf-f6-F9X" secondAttribute="bottom" constant="30" id="x2l-Hs-v8g"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="34.5" y="110.5"/>
+        </view>
+    </objects>
+</document>

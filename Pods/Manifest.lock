@@ -1,0 +1,20 @@
+PODS:
+  - Instructions (1.2.2)
+  - NSString-Hashes (1.2.2)
+
+DEPENDENCIES:
+  - Instructions (~> 1.2.0)
+  - NSString-Hashes (~> 1.2.2)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Instructions
+    - NSString-Hashes
+
+SPEC CHECKSUMS:
+  Instructions: baff1b8ac41e195556c2b3453be1fcdd92e18612
+  NSString-Hashes: c3848d809e92650e4fb17db5d8cc4bd2aa1eaddd
+
+PODFILE CHECKSUM: ff90e513a96d84e27ac8bc5a2a6ecb25fb1fdaba
+
+COCOAPODS: 1.11.3

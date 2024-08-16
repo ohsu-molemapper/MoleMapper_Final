@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cwc-fC-EtI">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="P6c-6W-tHk">
+            <objects>
+                <viewController id="Cwc-fC-EtI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fx7-nu-kO8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="Q7S-y2-gVe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QTU-jp-vUi"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q7S-y2-gVe" firstAttribute="trailing" secondItem="QTU-jp-vUi" secondAttribute="trailing" id="D77-wn-QNV"/>
+                            <constraint firstItem="Q7S-y2-gVe" firstAttribute="leading" secondItem="QTU-jp-vUi" secondAttribute="leading" id="Hbu-Z9-14N"/>
+                            <constraint firstItem="Q7S-y2-gVe" firstAttribute="top" secondItem="fx7-nu-kO8" secondAttribute="top" id="YrJ-ph-hxn"/>
+                            <constraint firstItem="Q7S-y2-gVe" firstAttribute="bottom" secondItem="QTU-jp-vUi" secondAttribute="bottom" id="iVL-WI-ABN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G1H-rS-G0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Default" width="320" height="480"/>
+    </resources>
+</document>

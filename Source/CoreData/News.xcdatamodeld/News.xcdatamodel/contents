@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G6030" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Story" representedClassName="Story" syncable="YES">
+        <attribute name="expireDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="hasBeenRead" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="link_url" attributeType="URI" syncable="YES"/>
+        <attribute name="publishDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="storyID" attributeType="UUID" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnail" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <attribute name="topic" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Story" positionX="-63" positionY="-18" width="128" height="180"/>
+    </elements>
+</model>

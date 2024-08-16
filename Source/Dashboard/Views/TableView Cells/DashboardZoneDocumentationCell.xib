@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DashboardZoneDocumentationCell" rowHeight="338" id="KGk-i7-Jjw" customClass="DashboardZoneDocumentationCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="338"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="337.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have documented" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3R-6w-XKn">
+                        <rect key="frame" x="75" y="78" width="170.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="LZC-l5-WN3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Zones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Amt-2z-Pfb">
+                        <rect key="frame" x="120.5" y="107" width="79.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="1Ox-Wo-rXx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                        <color key="textColor" red="0.0" green="0.6705882353" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMg-Ol-b43" userLabel="Header">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zones Documented" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffw-zC-Tk9">
+                                <rect key="frame" x="80.5" y="21" width="159.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.6705882353" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.795245914" green="0.89705110079999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ffw-zC-Tk9" firstAttribute="centerX" secondItem="DMg-Ol-b43" secondAttribute="centerX" id="hvW-N6-wTE"/>
+                            <constraint firstAttribute="height" constant="63" id="tzz-Jh-4ja"/>
+                            <constraint firstItem="Ffw-zC-Tk9" firstAttribute="centerY" secondItem="DMg-Ol-b43" secondAttribute="centerY" id="vpY-b6-ZaC"/>
+                        </constraints>
+                    </view>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SdO-H6-0Qa" userLabel="Gray Circle" customClass="UAProgressView">
+                        <rect key="frame" x="88" y="149" width="144" height="144"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="144" id="MeN-qt-Q1Z"/>
+                            <constraint firstAttribute="width" constant="144" id="k3q-K5-GnQ"/>
+                        </constraints>
+                    </view>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nf9-ml-Dbf" customClass="UAProgressView">
+                        <rect key="frame" x="88" y="149" width="144" height="144"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="144" id="W7r-G5-ivx"/>
+                            <constraint firstAttribute="width" constant="144" id="mk9-gh-PC4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SdO-H6-0Qa" firstAttribute="top" secondItem="Amt-2z-Pfb" secondAttribute="bottom" constant="21" id="0SR-0U-nv2"/>
+                    <constraint firstItem="Nf9-ml-Dbf" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="491-WU-fqw"/>
+                    <constraint firstItem="P3R-6w-XKn" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Ej3-oL-o9p"/>
+                    <constraint firstAttribute="trailing" secondItem="DMg-Ol-b43" secondAttribute="trailing" id="Ghe-r8-MYx"/>
+                    <constraint firstItem="DMg-Ol-b43" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Rst-vp-EZ6"/>
+                    <constraint firstItem="P3R-6w-XKn" firstAttribute="top" secondItem="DMg-Ol-b43" secondAttribute="bottom" constant="15" id="WaS-dI-Cdm"/>
+                    <constraint firstItem="DMg-Ol-b43" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eFa-Ro-pP6"/>
+                    <constraint firstItem="SdO-H6-0Qa" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="fGE-Qf-UaM"/>
+                    <constraint firstItem="Amt-2z-Pfb" firstAttribute="top" secondItem="P3R-6w-XKn" secondAttribute="bottom" constant="8" id="icz-MS-i9F"/>
+                    <constraint firstItem="Amt-2z-Pfb" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="pxs-F1-d7b"/>
+                    <constraint firstItem="Nf9-ml-Dbf" firstAttribute="top" secondItem="Amt-2z-Pfb" secondAttribute="bottom" constant="21" id="v30-hp-L02"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="documentedZones" destination="Amt-2z-Pfb" id="EeH-P6-YT1"/>
+                <outlet property="grayCircle" destination="SdO-H6-0Qa" id="6TH-8k-q4r"/>
+                <outlet property="header" destination="DMg-Ol-b43" id="d2f-20-KGZ"/>
+                <outlet property="headerTitle" destination="Ffw-zC-Tk9" id="l5D-iX-KKK"/>
+                <outlet property="progressView" destination="Nf9-ml-Dbf" id="Q26-Xc-2oQ"/>
+            </connections>
+            <point key="canvasLocation" x="199" y="383"/>
+        </tableViewCell>
+    </objects>
+</document>

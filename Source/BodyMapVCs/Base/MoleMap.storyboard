@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mole Map-->
+        <scene sceneID="mrM-V0-uif">
+            <objects>
+                <viewController storyboardIdentifier="bodyMap" id="Pwp-8Y-V2F" customClass="BodyMapViewController" customModule="MoleMapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uM2-Ba-IdW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eF-NK-ORa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <gestureRecognizers/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2J8-WS-9H4"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Mole Map" image="moleMapUnselected" selectedImage="moleMapSelected" id="KFT-Uo-C9o"/>
+                    <navigationItem key="navigationItem" id="Nck-qm-ows">
+                        <barButtonItem key="rightBarButtonItem" id="ZpN-n0-tRb">
+                            <button key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5LS-fI-EWW">
+                                <rect key="frame" x="319" y="2" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="gear"/>
+                                <connections>
+                                    <action selector="demoButtonTapped:" destination="Pwp-8Y-V2F" eventType="touchUpInside" id="Vfe-bD-FVy"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="demoVideosButton" destination="5LS-fI-EWW" id="Nqq-OX-umA"/>
+                        <outlet property="scrollView" destination="5eF-NK-ORa" id="w9e-4u-9mx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NgP-El-lru" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2300" y="-1716.7916041979013"/>
+        </scene>
+        <!--Mole Map-->
+        <scene sceneID="ZW8-5K-CIZ">
+            <objects>
+                <navigationController storyboardIdentifier="bodyMapBase" definesPresentationContext="YES" id="aVk-gy-KeW" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Mole Map" id="krT-5h-fds"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="wjA-5B-bee">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Pwp-8Y-V2F" kind="relationship" relationship="rootViewController" id="Xtc-ve-bXB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yfq-0h-Fuz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3072" y="-1715.4422788605698"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear" width="25" height="25"/>
+        <image name="moleMapSelected" width="25" height="25"/>
+        <image name="moleMapUnselected" width="25" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="e3D-60-rDI">
+            <objects>
+                <viewController storyboardIdentifier="RTFViewController" id="tN6-Ll-HfD" customClass="RTFViewController" customModule="MoleMapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QgA-hr-lek">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVD-Uc-y5C">
+                                <rect key="frame" x="8" y="38" width="359" height="611"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo co</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JyX-EY-A5g" firstAttribute="bottom" secondItem="kVD-Uc-y5C" secondAttribute="bottom" constant="18" id="Ren-dG-8ON"/>
+                            <constraint firstItem="JyX-EY-A5g" firstAttribute="trailing" secondItem="kVD-Uc-y5C" secondAttribute="trailing" constant="8" id="Vmr-Dl-cF5"/>
+                            <constraint firstItem="kVD-Uc-y5C" firstAttribute="top" secondItem="JyX-EY-A5g" secondAttribute="top" constant="18" id="pNO-bq-cAr"/>
+                            <constraint firstItem="kVD-Uc-y5C" firstAttribute="leading" secondItem="JyX-EY-A5g" secondAttribute="leading" constant="8" id="zk7-1Y-pkj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JyX-EY-A5g"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VPd-9Z-hhq"/>
+                    <connections>
+                        <outlet property="textView" destination="kVD-Uc-y5C" id="lex-On-8gb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Jk-Qg-xrI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951.20000000000005" y="163.26836581709148"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tYu-Zf-b84">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Learn More View Controller-->
+        <scene sceneID="V8t-pp-d7c">
+            <objects>
+                <tableViewController storyboardIdentifier="learnMoreScene" id="Dx5-XL-F8V" customClass="LearnMoreViewController" customModule="MoleMapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="u45-tV-OFa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" name="mmBlue"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Dx5-XL-F8V" id="sB6-sT-iW9"/>
+                            <outlet property="delegate" destination="Dx5-XL-F8V" id="PNr-P3-ruj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Ai9-bW-lGc"/>
+                    <connections>
+                        <outlet property="tableView" destination="u45-tV-OFa" id="d0T-4C-YYd"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fyr-G7-vNk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1874" y="1344"/>
+        </scene>
+        <!--Learn More-->
+        <scene sceneID="gD8-Z9-UGH">
+            <objects>
+                <navigationController title="Learn More" automaticallyAdjustsScrollViewInsets="NO" id="tYu-Zf-b84" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LVv-fP-baq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dx5-XL-F8V" kind="relationship" relationship="rootViewController" id="FfU-0b-r3O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zkr-pO-Ggc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2657" y="1343"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="mmBlue">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

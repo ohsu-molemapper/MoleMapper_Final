@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PDF View Controller-->
+        <scene sceneID="q8s-hz-GTI">
+            <objects>
+                <viewController storyboardIdentifier="PDFViewerViewController" hidesBottomBarWhenPushed="YES" id="nwT-X0-293" userLabel="PDF View Controller" customClass="PDFViewerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J9W-Kx-UcR">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" mediaPlaybackRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlc-CH-a6A">
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M34-MK-byN"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hlc-CH-a6A" firstAttribute="top" secondItem="M34-MK-byN" secondAttribute="top" id="32s-70-l3L"/>
+                            <constraint firstItem="M34-MK-byN" firstAttribute="bottom" secondItem="hlc-CH-a6A" secondAttribute="bottom" id="76Z-ay-aWk"/>
+                            <constraint firstItem="hlc-CH-a6A" firstAttribute="leading" secondItem="M34-MK-byN" secondAttribute="leading" id="Wfm-wN-22l"/>
+                            <constraint firstItem="M34-MK-byN" firstAttribute="trailing" secondItem="hlc-CH-a6A" secondAttribute="trailing" id="WqT-gL-T3f"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KoZ-Am-pdJ"/>
+                    <connections>
+                        <outlet property="pdfWebView" destination="hlc-CH-a6A" id="wEl-Tm-VC7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Re-7x-YYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1218" y="2226"/>
+        </scene>
+    </scenes>
+</document>

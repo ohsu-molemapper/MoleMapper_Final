@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IdentifyMolesViewController" customModule="MoleMapper" customModuleProvider="target">
+            <connections>
+                <outlet property="helpButton" destination="f9s-0T-IcT" id="WY6-Zb-ZH9"/>
+                <outlet property="imageView" destination="kt0-fl-xVd" id="IDP-a0-0M6"/>
+                <outlet property="scrollView" destination="VmS-Dq-aNt" id="RAI-fS-6qk"/>
+                <outlet property="view" destination="iN0-l3-epB" id="xQq-g4-WkO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="Identify Moles">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmS-Dq-aNt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kt0-fl-xVd">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="kt0-fl-xVd" secondAttribute="trailing" id="7R3-Ey-5QX"/>
+                        <constraint firstItem="kt0-fl-xVd" firstAttribute="leading" secondItem="VmS-Dq-aNt" secondAttribute="leading" id="Vuw-7V-uc8"/>
+                        <constraint firstItem="kt0-fl-xVd" firstAttribute="top" secondItem="VmS-Dq-aNt" secondAttribute="top" id="Z8p-uk-9yj"/>
+                        <constraint firstAttribute="bottom" secondItem="kt0-fl-xVd" secondAttribute="bottom" id="mSQ-Hx-b6x"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="fQ6-fG-kCe"/>
+                    </connections>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9s-0T-IcT">
+                    <rect key="frame" x="171.5" y="50" width="32" height="30"/>
+                    <state key="normal" title="Help"/>
+                    <connections>
+                        <action selector="invokeHelp:" destination="-1" eventType="touchUpInside" id="22i-Os-LTn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VmS-Dq-aNt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2US-IM-kyy"/>
+                <constraint firstItem="VmS-Dq-aNt" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="53R-F2-B1K"/>
+                <constraint firstItem="f9s-0T-IcT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="8Y1-yz-udj"/>
+                <constraint firstItem="kt0-fl-xVd" firstAttribute="height" secondItem="VmS-Dq-aNt" secondAttribute="height" id="BIF-Kr-OEo"/>
+                <constraint firstItem="kt0-fl-xVd" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="K55-zg-zOh"/>
+                <constraint firstItem="VmS-Dq-aNt" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="c3L-co-aEm"/>
+                <constraint firstItem="VmS-Dq-aNt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dvj-p1-0db"/>
+                <constraint firstItem="f9s-0T-IcT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="g10-hD-rcW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-423" y="112"/>
+        </view>
+    </objects>
+</document>

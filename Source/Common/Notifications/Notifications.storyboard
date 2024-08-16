@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notifications Request-->
+        <scene sceneID="AGA-5Z-rRE">
+            <objects>
+                <viewController storyboardIdentifier="NotificationRequest" id="vRX-hb-PvE" userLabel="Notifications Request" customClass="NotificationRequestViewController" customModule="MoleMapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FK3-CI-eLl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1wN-VW-8bd">
+                                <rect key="frame" x="32" y="40" width="311" height="567"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="500" image="reminder" translatesAutoresizingMaskIntoConstraints="NO" id="Rsr-gm-Nie">
+                                        <rect key="frame" x="91.5" y="0.0" width="128" height="128"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="In which we nicely ask the user if we can send them occasional notifications infrequently." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19R-E1-bgi">
+                                        <rect key="frame" x="0.0" y="158" width="311" height="255"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOu-ed-MbM">
+                                        <rect key="frame" x="40" y="443" width="231" height="48"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="14" maxX="0.0" maxY="14"/>
+                                        <state key="normal" title="Yes, sounds good!"/>
+                                        <connections>
+                                            <action selector="userAgrees:" destination="vRX-hb-PvE" eventType="touchUpInside" id="cLR-aD-YMo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y83-Kl-XPt">
+                                        <rect key="frame" x="40" y="521" width="231" height="46"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="14" maxX="0.0" maxY="14"/>
+                                        <state key="normal" title="Maybe later..."/>
+                                        <connections>
+                                            <action selector="userPostpones:" destination="vRX-hb-PvE" eventType="touchUpInside" id="Vx4-ft-tsK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="19R-E1-bgi" firstAttribute="leading" secondItem="1wN-VW-8bd" secondAttribute="leadingMargin" id="304-Gr-t5q"/>
+                                    <constraint firstAttribute="trailing" secondItem="MOu-ed-MbM" secondAttribute="trailing" constant="40" id="SrS-RT-cmZ"/>
+                                    <constraint firstItem="Rsr-gm-Nie" firstAttribute="centerX" secondItem="1wN-VW-8bd" secondAttribute="centerX" id="WuP-bw-7PF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y83-Kl-XPt" secondAttribute="trailing" constant="40" id="X9u-xE-D50"/>
+                                    <constraint firstItem="MOu-ed-MbM" firstAttribute="leading" secondItem="1wN-VW-8bd" secondAttribute="leading" constant="40" id="eV6-bh-Kxd"/>
+                                    <constraint firstItem="Rsr-gm-Nie" firstAttribute="top" secondItem="1wN-VW-8bd" secondAttribute="top" id="f72-Dn-aKz"/>
+                                    <constraint firstItem="Y83-Kl-XPt" firstAttribute="leading" secondItem="1wN-VW-8bd" secondAttribute="leading" constant="40" id="lV3-hx-bg6"/>
+                                    <constraint firstAttribute="trailing" secondItem="19R-E1-bgi" secondAttribute="trailing" id="yqY-qd-ycr"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tB4-7q-9fw" firstAttribute="trailing" secondItem="1wN-VW-8bd" secondAttribute="trailing" constant="32" id="11v-Kh-Ir4"/>
+                            <constraint firstItem="tB4-7q-9fw" firstAttribute="bottom" secondItem="1wN-VW-8bd" secondAttribute="bottom" constant="60" id="DLh-qx-d88"/>
+                            <constraint firstItem="1wN-VW-8bd" firstAttribute="leading" secondItem="tB4-7q-9fw" secondAttribute="leading" constant="32" id="qpo-YX-cyc"/>
+                            <constraint firstItem="1wN-VW-8bd" firstAttribute="top" secondItem="tB4-7q-9fw" secondAttribute="top" constant="20" id="yCH-wC-f69"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tB4-7q-9fw"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Rsr-gm-Nie" id="5IZ-jG-KYk"/>
+                        <outlet property="maybeButton" destination="Y83-Kl-XPt" id="C9W-lV-wRk"/>
+                        <outlet property="textView" destination="19R-E1-bgi" id="6Vf-sS-EQ5"/>
+                        <outlet property="yesButton" destination="MOu-ed-MbM" id="N2R-NP-whA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3gm-pZ-HDT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1954" y="2226"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="reminder" width="128" height="128"/>
+    </resources>
+</document>
